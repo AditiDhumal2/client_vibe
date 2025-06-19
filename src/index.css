@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    overflow: hidden;
+  }
+  
+  .login-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    flex-direction: column;
+  }
+  
+  .login-container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  }
+  
+  .google-login {
+    margin-top: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    background: #1db954;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .google-login:hover {
+    background: #19a347;
+  }
+  
+  /* Floating music notes animation */
+  .music-notes::before,
+  .music-notes::after {
+    content: "🎵 🎶 🎵 🎶 🎵 🎶";
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: floatNotes 20s linear infinite;
+    white-space: nowrap;
+  }
+  
+  .music-notes::after {
+    top: 50%;
+    animation-delay: 10s;
+  }
+  
+  @keyframes floatNotes {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
